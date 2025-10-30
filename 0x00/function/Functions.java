@@ -1,3 +1,4 @@
+import org.springframework.web.bind.annotation.PostMapping;
 import java.util.Date;
 
 public class Functions {
@@ -23,12 +24,12 @@ public class Functions {
     }
 
     // ✅ No side effects — separa efeitos colaterais em métodos distintos
-    public User saveUserClean(User user) {
+    //B
+    public User saveUser(User user){
         return userRepository.save(user);
     }
-
-    public void setRole(User user) {
-        user.setRole(user);
+    public void setRole(User user){
+        user.setRole(user);     
     }
 
     // ✅ Evite duplicados — extrai lógica comum para método privado
