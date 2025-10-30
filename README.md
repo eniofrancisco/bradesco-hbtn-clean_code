@@ -1,46 +1,43 @@
-# Projeto: Uso da Nomenclatura — Clean Code
+# Projeto: Funções Limpas — Clean Code
 
-Este projeto tem como objetivo demonstrar boas práticas de nomenclatura em Java, seguindo os princípios do Clean Code. A classe  apresenta exemplos comparativos entre nomes ruins e nomes limpos, destacando como a escolha de nomes pode impactar diretamente na legibilidade e manutenção do código.
+Este projeto demonstra boas práticas de desenvolvimento em Java aplicadas à construção de funções limpas, coesas e legíveis. A classe  foi criada com base nos princípios do Clean Code, priorizando clareza, responsabilidade única e ausência de efeitos colaterais.
 
 ## 📄 Arquivo principal
 
-- : contém exemplos de variáveis, métodos, classes e constantes com foco em nomenclatura clara, intuitiva e expressiva.
+- : contém exemplos de funções refatoradas para seguir os princípios de Clean Code, com foco em nomeação adequada, separação de responsabilidades e reutilização de lógica.
 
-## 🎯 Objetivo
+## 🎯 Princípios aplicados
 
-Refatorar trechos de código para aplicar os seguintes princípios:
+- ✅ **Funções com responsabilidade única**  
+  Cada função realiza apenas uma tarefa específica, como  e .
 
-- ✅ Nomes que falam por si só
-- ✅ Funções com verbos e propósito único
-- ✅ Evitar abreviações e prefixos desnecessários
-- ✅ Utilizar constantes nomeadas em vez de números mágicos
-- ✅ Comentários apenas quando necessário para explicar intenções
-- ✅ Uma palavra por conceito (evitar duplicidade semântica)
+- ✅ **Um nível de abstração por função**  
+  Métodos como  delegam corretamente ao serviço, sem misturar camadas.
 
-## 🧠 Exemplos aplicados
+- ✅ **Número mínimo de argumentos**  
+  Funções evitam excesso de parâmetros, mantendo a simplicidade e legibilidade.
 
--  em vez de 
--  em vez de 
--  sem prefixos confusos
--  em vez de 
-- ,  com verbos claros
--  como constante nomeada
+- ✅ **Sem efeitos colaterais ocultos**  
+  Métodos como  não alteram o estado do objeto fora do escopo.
+
+- ✅ **Evita duplicação de lógica**  
+  Trechos repetidos foram extraídos para métodos auxiliares como .
 
 ## 📁 Estrutura
 
 ```
-0x00/nomenclatura/
-├── Name.java
+0x00/function/
+├── Functions.java
 └── README.md
 ```
 
 ## 📚 Referências
 
 - Clean Code — Robert C. Martin
-- Convenções de nomenclatura Java
-- Princípios SOLID e boas práticas de refatoração
+- Convenções de nomenclatura e estruturação de funções em Java
+- Princípios SOLID e refatoração orientada a propósito
 
 ## 📌 Observações
 
-Este projeto é parte do repositório [bradesco-hbtn-clean_code](https://github.com/seu-usuario/bradesco-hbtn-clean_code) e serve como base para estudos e treinamentos sobre legibilidade e clareza de código.
+Este projeto faz parte do repositório [bradesco-hbtn-clean_code](https://github.com/seu-usuario/bradesco-hbtn-clean_code) e serve como base para estudos sobre legibilidade, clareza e boas práticas na construção de funções em Java.
 
