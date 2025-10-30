@@ -17,11 +17,9 @@ public class Name {
     public List<Account> AccountList;
 
     // Sem Prefixos
-    //A
-    public void deleteUser(Name.User pUser) {
-        // implementação fictícia
-    }
-
+    //B
+    public void deleteUser(Name.User user){};
+	
     // Evite mapa mental
     //A
     public URL url;
